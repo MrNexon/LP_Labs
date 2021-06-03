@@ -216,7 +216,6 @@ def loadData(file):
     return data
 
 
-loadFiles()
 root = tk.Tk()
 root.title('Лабораторная работа 11')
 root.configure(bg='grey85')

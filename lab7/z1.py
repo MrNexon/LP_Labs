@@ -60,9 +60,11 @@ def calculateEvent():
         if str(i)[:3] == 'row':
             key = tableFrame.children.get(i).children.get('key').get()
             value = tableFrame.children.get(i).children.get('value').get()
-            d[key] = value
+            if key != '':
+                d[key] = value
 
-    ttk.Label(root, text='Количество ключей словаря: {0}'.format(len(d.keys()))).grid(column=0, row=3, sticky=tk.SW)
+    print(d)
+    ttk.Label(root, text='Количество ключей словаря: {0}'.format(len(d))).grid(column=0, row=3, sticky=tk.SW)
 
 
 add = ttk.Button(buttonFrame, text="Добавить", command=addEvent)
