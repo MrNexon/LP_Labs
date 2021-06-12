@@ -50,7 +50,6 @@ def drawTable(data_dict):
     label.insert(1.0, tableData)
     label.config(state=tk.DISABLED)
 
-
 root = tk.Tk()
 root.title('Лабораторная работа 12')
 root.configure(bg='grey85')
